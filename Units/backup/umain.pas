@@ -30,7 +30,7 @@ type
     procedure consentracaoNutriente();
   private
          var tipoNutr, dejeto : integer;
-         var saida2, qrn, ms, c, ie, n, p, k : real;
+         var saida2, qrn, ms, c, ie, n, p, k, mn, mp, mk : real;
          var qrns, saida2s : string;
   public
 
