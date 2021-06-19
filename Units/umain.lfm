@@ -1,0 +1,120 @@
+object Form1: TForm1
+  Left = 353
+  Height = 362
+  Top = 246
+  Width = 327
+  Caption = 'Form1'
+  ClientHeight = 0
+  ClientWidth = 0
+  DesignTimePPI = 120
+  LCLVersion = '2.0.12.0'
+  object cbTipoDejeto: TComboBox
+    Left = 41
+    Height = 28
+    Top = 128
+    Width = 232
+    ItemHeight = 20
+    Items.Strings = (
+      'Cama de frango (3-4 lotes)'
+      'Cama de frango (5-6 lotes)'
+      'Cama de frangos (7-8 lotes)'
+      'Cama de peru (2 lotes)'
+      'Cama de poedeira'
+      'Cama sobreposta de suínos'
+      'Esterco sólido de suínos'
+      'Esterco sólido de bovinos'
+      'Esterco líquido de suínos'
+      'Esterco líquido de bovinos'
+    )
+    OnChange = cbTipoDejetoChange
+    TabOrder = 0
+    Text = 'Selecione o Tipo de Dejeto'
+  end
+  object edtQrn: TEdit
+    Left = 41
+    Height = 28
+    Top = 232
+    Width = 100
+    TabOrder = 1
+  end
+  object lbTipDej: TLabel
+    Left = 40
+    Height = 20
+    Top = 104
+    Width = 233
+    Caption = 'Tipo de dejeto que deseja analizar:'
+    ParentColor = False
+  end
+  object lbQrn: TLabel
+    Left = 40
+    Height = 40
+    Top = 184
+    Width = 178
+    Caption = 'Quantidade recomendada '#13#10'de nutrientes em Kg:'
+    ParentColor = False
+  end
+  object lbSaida1: TLabel
+    Left = 48
+    Height = 20
+    Top = 296
+    Width = 47
+    Caption = 'Aplicar'
+    ParentColor = False
+  end
+  object lbSaida2: TLabel
+    Left = 104
+    Height = 20
+    Top = 296
+    Width = 30
+    Caption = '_____'
+    ParentColor = False
+  end
+  object lbSaida3: TLabel
+    Left = 144
+    Height = 20
+    Top = 296
+    Width = 24
+    Caption = '____'
+    ParentColor = False
+  end
+  object lbSaida4: TLabel
+    Left = 192
+    Height = 20
+    Top = 296
+    Width = 73
+    Caption = 'de dejetos.'
+    ParentColor = False
+  end
+  object btnOk: TButton
+    Left = 179
+    Height = 31
+    Top = 232
+    Width = 94
+    Caption = 'OK'
+    OnClick = btnOkClick
+    TabOrder = 2
+  end
+  object cbTipoNutr: TComboBox
+    Left = 41
+    Height = 28
+    Top = 48
+    Width = 190
+    ItemHeight = 20
+    Items.Strings = (
+      'Nitrogênio'
+      'Fósforo'
+      'Potássio'
+    )
+    OnChange = cbTipoNutrChange
+    TabOrder = 3
+    Text = 'Selecione o Nutriente'
+  end
+  object lbTipoNutr: TLabel
+    Left = 41
+    Height = 20
+    Top = 17
+    Width = 188
+    Caption = 'Tipo de Nutriente a analizar:'
+    ParentColor = False
+  end
+end
