@@ -9,9 +9,9 @@ uses
 
 type
 
-  { TForm1 }
+  { TDejetos }
 
-  TForm1 = class(TForm)
+  TDejetos = class(TForm)
     btnOk: TButton;
     cbTipoDejeto: TComboBox;
     cbTipoNutr: TComboBox;
@@ -37,25 +37,25 @@ type
   end;
 
 var
-  Form1: TForm1;
+  Dejetos: TDejetos;
 
 implementation
 
 {$R *.lfm}
 
-{ TForm1 }
+{ TDejetos }
 
-procedure TForm1.cbTipoNutrChange(Sender: TObject);
+procedure TDejetos.cbTipoNutrChange(Sender: TObject);
 begin
   tipoNutr := cbTipoNutr.ItemIndex;
 end;
 
-procedure TForm1.cbTipoDejetoChange(Sender: TObject);
+procedure TDejetos.cbTipoDejetoChange(Sender: TObject);
 begin
   dejeto := cbTipoDejeto.ItemIndex;
 end;
 
-procedure TForm1.btnOkClick(Sender: TObject);
+procedure TDejetos.btnOkClick(Sender: TObject);
 begin
      if (cbTipoNutr.ItemIndex <> -1) and (cbTipoDejeto.ItemIndex <> -1)
      and (edtQrn.Text <> '') then
@@ -84,7 +84,7 @@ begin
      end;
 end;
 
-procedure TForm1.materiaSeca();
+procedure TDejetos.materiaSeca();
 begin
      case (dejeto) of
    0, 1, 2, 3:
@@ -130,7 +130,7 @@ begin
    end;
 end;
 
-procedure TForm1.consentracaoNutriente();
+procedure TDejetos.consentracaoNutriente();
 begin
   case (dejeto) of
    0:

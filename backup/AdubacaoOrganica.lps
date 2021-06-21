@@ -17,12 +17,12 @@
       <Unit1>
         <Filename Value="Units\umain.pas"/>
         <IsPartOfProject Value="True"/>
-        <ComponentName Value="Form1"/>
+        <ComponentName Value="Dejetos"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uMain"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="47"/>
+        <TopLine Value="45"/>
         <CursorPos X="57" Y="33"/>
         <UsageCount Value="22"/>
         <Loaded Value="True"/>
