@@ -1,15 +1,15 @@
 object Dejetos: TDejetos
   Left = 353
-  Height = 362
+  Height = 325
   Top = 246
-  Width = 327
+  Width = 310
   Caption = 'Dejetos'
-  ClientHeight = 362
-  ClientWidth = 327
+  ClientHeight = 325
+  ClientWidth = 310
   DesignTimePPI = 120
   LCLVersion = '2.0.12.0'
   object cbTipoDejeto: TComboBox
-    Left = 41
+    Left = 39
     Height = 28
     Top = 128
     Width = 232
@@ -31,71 +31,71 @@ object Dejetos: TDejetos
     Text = 'Selecione o Tipo de Dejeto'
   end
   object edtQrn: TEdit
-    Left = 41
+    Left = 38
     Height = 28
-    Top = 232
+    Top = 224
     Width = 100
     TabOrder = 1
   end
   object lbTipDej: TLabel
-    Left = 40
+    Left = 38
     Height = 20
-    Top = 104
+    Top = 96
     Width = 233
     Caption = 'Tipo de dejeto que deseja analizar:'
     ParentColor = False
   end
   object lbQrn: TLabel
-    Left = 40
+    Left = 38
     Height = 40
-    Top = 184
+    Top = 176
     Width = 178
     Caption = 'Quantidade recomendada '#13#10'de nutrientes em Kg:'
     ParentColor = False
   end
   object lbSaida1: TLabel
-    Left = 41
+    Left = 46
     Height = 20
-    Top = 296
+    Top = 280
     Width = 47
     Caption = 'Aplicar'
     ParentColor = False
   end
   object lbSaida2: TLabel
-    Left = 96
+    Left = 102
     Height = 20
-    Top = 296
-    Width = 48
-    Caption = '________'
+    Top = 280
+    Width = 30
+    Caption = '_____'
     ParentColor = False
   end
   object lbSaida3: TLabel
-    Left = 152
+    Left = 142
     Height = 20
-    Top = 296
+    Top = 280
     Width = 36
     Caption = '______'
     ParentColor = False
   end
   object lbSaida4: TLabel
-    Left = 200
+    Left = 190
     Height = 20
-    Top = 296
+    Top = 280
     Width = 73
     Caption = 'de dejetos.'
     ParentColor = False
   end
   object btnOk: TButton
-    Left = 179
+    Left = 177
     Height = 31
-    Top = 232
+    Top = 224
     Width = 94
     Caption = 'OK'
     OnClick = btnOkClick
     TabOrder = 2
   end
   object cbTipoNutr: TComboBox
-    Left = 41
+    Left = 39
     Height = 28
     Top = 48
     Width = 190
@@ -110,7 +110,7 @@ object Dejetos: TDejetos
     Text = 'Selecione o Nutriente'
   end
   object lbTipoNutr: TLabel
-    Left = 41
+    Left = 39
     Height = 20
     Top = 17
     Width = 188
