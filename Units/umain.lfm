@@ -3,6 +3,7 @@ object Dejetos: TDejetos
   Height = 325
   Top = 246
   Width = 310
+  BorderStyle = bsDialog
   Caption = 'Dejetos'
   ClientHeight = 325
   ClientWidth = 310
