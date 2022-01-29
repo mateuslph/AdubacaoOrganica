@@ -4,7 +4,7 @@
     <PathDelim Value="\"/>
     <Version Value="11"/>
     <BuildModes Active="Default"/>
-    <Units Count="2">
+    <Units Count="4">
       <Unit0>
         <Filename Value="AdubacaoOrganica.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -22,14 +22,27 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uMain"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="41"/>
-        <CursorPos X="57" Y="33"/>
+        <TopLine Value="18"/>
+        <CursorPos X="49" Y="28"/>
         <UsageCount Value="22"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit1>
+      <Unit2>
+        <Filename Value="C:\lazarus\lcl\include\customform.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="448"/>
+        <CursorPos Y="460"/>
+        <UsageCount Value="10"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="C:\lazarus\lcl\forms.pp"/>
+        <UnitName Value="Forms"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="10"/>
+      </Unit3>
     </Units>
-    <JumpHistory Count="3" HistoryIndex="2">
+    <JumpHistory Count="8" HistoryIndex="7">
       <Position1>
         <Filename Value="Units\umain.pas"/>
         <Caret Line="258" Column="5" TopLine="238"/>
@@ -40,8 +53,28 @@
       </Position2>
       <Position3>
         <Filename Value="Units\umain.pas"/>
-        <Caret Line="34" Column="27" TopLine="12"/>
+        <Caret Line="34" Column="57" TopLine="34"/>
       </Position3>
+      <Position4>
+        <Filename Value="Units\umain.pas"/>
+        <Caret Line="52" Column="5" TopLine="37"/>
+      </Position4>
+      <Position5>
+        <Filename Value="Units\umain.pas"/>
+        <Caret Line="47" Column="13" TopLine="43"/>
+      </Position5>
+      <Position6>
+        <Filename Value="Units\umain.pas"/>
+        <Caret Line="29" Column="44" TopLine="6"/>
+      </Position6>
+      <Position7>
+        <Filename Value="Units\umain.pas"/>
+        <Caret Line="51" Column="22" TopLine="51"/>
+      </Position7>
+      <Position8>
+        <Filename Value="Units\umain.pas"/>
+        <Caret Line="48" TopLine="40"/>
+      </Position8>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>

@@ -28,7 +28,7 @@ object Dejetos: TDejetos
       'Esterco líquido de bovinos'
     )
     OnChange = cbTipoDejetoChange
-    TabOrder = 0
+    TabOrder = 1
     Text = 'Selecione o Tipo de Dejeto'
   end
   object edtQrn: TEdit
@@ -36,7 +36,7 @@ object Dejetos: TDejetos
     Height = 28
     Top = 224
     Width = 100
-    TabOrder = 1
+    TabOrder = 2
   end
   object lbTipDej: TLabel
     Left = 38
@@ -93,7 +93,7 @@ object Dejetos: TDejetos
     Width = 94
     Caption = 'OK'
     OnClick = btnOkClick
-    TabOrder = 2
+    TabOrder = 3
   end
   object cbTipoNutr: TComboBox
     Left = 39
@@ -107,7 +107,7 @@ object Dejetos: TDejetos
       'Potássio'
     )
     OnChange = cbTipoNutrChange
-    TabOrder = 3
+    TabOrder = 0
     Text = 'Selecione o Nutriente'
   end
   object lbTipoNutr: TLabel
