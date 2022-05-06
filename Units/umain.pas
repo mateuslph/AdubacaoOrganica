@@ -34,7 +34,7 @@ type
   private
          var tipoNutr, dejeto, v1, v2 : integer;
          var saida2, qrn, ms, c, ie, n, p, k, mn, mp, mk : real;
-         var qrns, saida2s, stpt, stre, st1, st2, st3, stv : string;
+         var qrns, saida2s, stpt, stre, st1, st2, st3, st4, st5, st6, stv : string;
   public
 
   end;
@@ -66,22 +66,19 @@ end;
 procedure TDejetos.edtQrnKeyDown(Sender: TObject; var Key: Word;
   Shift: TShiftState);
 begin
-     If (Key = 13) Then
+     if (Key = 13) then
      begin
           calculo();
      end;
+
 end;
 
 procedure TDejetos.edtQrnKeyUp(Sender: TObject; var Key: Word;
   Shift: TShiftState);
 begin
-
     stpt := edtQrn.Text;
     v1 := length(stpt);
-    if (v1 <> 0) then
-    begin
-      v2 := v1 - 1;
-    end;
+    v2 := v1 - 1;
     if (v2 <> 0) then
     begin
       Delete(stpt, 1, v2);
@@ -92,19 +89,27 @@ begin
     end;
     stre := edtQrn.Text;
     v1 := length(stre);
-    if (v1 <> 0) then
-    begin
-      Delete(stre, v1, 1);
-      st1 := stre + stpt;
-      st2 := stre + stpt;
-      st3 := stre + stpt;
-      stv := stre + stpt;
-      Delete(st1, 2, 2);
-      Delete(st2, 1, 1);
-      Delete(st2, 2, 1);
-      Delete(st3, 1, 2);
-    end;
-    if (st1 = ',') and (st2 <> ',') and (st3 <> ',') then
+    Delete(stre, v1, 1);
+    st1 := stre + stpt;
+    st2 := stre + stpt;
+    st3 := stre + stpt;
+    st4 := stre + stpt;
+    st5 := stre + stpt;
+    st6 := stre + stpt;
+    stv := stre + stpt;
+    Delete(st1, 2, 5);
+    Delete(st2, 3, 4);
+    Delete(st2, 1, 1);
+    Delete(st3, 4, 3);
+    Delete(st3, 1, 2);
+    Delete(st4, 5, 2);
+    Delete(st4, 1, 3);
+    Delete(st5, 6, 1);
+    Delete(st5, 1, 4);
+    Delete(st6, 1, 5);
+
+    if (st1 = ',') and (st2 <> ',') and (st3 <> ',') and (st4 <> ',') and
+      (st5 <> ',') and (st6 <> ',') then
     begin
       ShowMessage('Não iniciar com separador decimal');
       Delete(stv, v1, 1);
@@ -113,7 +118,9 @@ begin
       edtQrn.SelStart := v1;
       exit;
     end;
-    if (st1 <> ',') and (st2 = ',') and (st3 = ',') then
+
+    if (st1 <> ',') and (st2 = ',') and (st3 = ',') and (st4 <> ',') and
+      (st5 <> ',') and (st6 <> ',') then
     begin
       ShowMessage('Digite apenas um separador decimal');
       Delete(stv, v1, 1);
@@ -122,7 +129,8 @@ begin
       edtQrn.SelStart := v1;
       exit;
     end;
-    if (st1 = ',') and (st2 <> ',') and (st3 = ',') then
+    if (st1 <> ',') and (st2 = ',') and (st3 <> ',') and (st4 = ',') and
+      (st5 <> ',') and (st6 <> ',') then
     begin
       ShowMessage('Digite apenas um separador decimal');
       Delete(stv, v1, 1);
@@ -131,7 +139,8 @@ begin
       edtQrn.SelStart := v1;
       exit;
     end;
-    if (st1 = ',') and (st2 = ',') and (st3 <> ',') then
+    if (st1 <> ',') and (st2 = ',') and (st3 <> ',') and (st4 <> ',') and
+      (st5 = ',') and (st6 <> ',') then
     begin
       ShowMessage('Digite apenas um separador decimal');
       Delete(stv, v1, 1);
@@ -140,7 +149,82 @@ begin
       edtQrn.SelStart := v1;
       exit;
     end;
-    if (st1 <> ',') and (st2 <> ',') and (st3 = ',') then
+    if (st1 <> ',') and (st2 = ',') and (st3 <> ',') and (st4 <> ',') and
+      (st5 <> ',') and (st6 = ',') then
+    begin
+      ShowMessage('Digite apenas um separador decimal');
+      Delete(stv, v1, 1);
+      edtQrn.Text := '';
+      edtQrn.Text := (stv);
+      edtQrn.SelStart := v1;
+      exit;
+    end;
+
+    if (st1 <> ',') and (st2 <> ',') and (st3 = ',') and (st4 = ',') and
+      (st5 <> ',') and (st6 <> ',') then
+    begin
+      ShowMessage('Digite apenas um separador decimal');
+      Delete(stv, v1, 1);
+      edtQrn.Text := '';
+      edtQrn.Text := (stv);
+      edtQrn.SelStart := v1;
+      exit;
+    end;
+    if (st1 <> ',') and (st2 <> ',') and (st3 = ',') and (st4 <> ',') and
+      (st5 = ',') and (st6 <> ',') then
+    begin
+      ShowMessage('Digite apenas um separador decimal');
+      Delete(stv, v1, 1);
+      edtQrn.Text := '';
+      edtQrn.Text := (stv);
+      edtQrn.SelStart := v1;
+      exit;
+    end;
+    if (st1 <> ',') and (st2 <> ',') and (st3 = ',') and (st4 <> ',') and
+      (st5 <> ',') and (st6 = ',') then
+    begin
+      ShowMessage('Digite apenas um separador decimal');
+      Delete(stv, v1, 1);
+      edtQrn.Text := '';
+      edtQrn.Text := (stv);
+      edtQrn.SelStart := v1;
+      exit;
+    end;
+
+    if (st1 <> ',') and (st2 <> ',') and (st3 <> ',') and (st4 = ',') and
+      (st5 = ',') and (st6 <> ',') then
+    begin
+      ShowMessage('Digite apenas um separador decimal');
+      Delete(stv, v1, 1);
+      edtQrn.Text := '';
+      edtQrn.Text := (stv);
+      edtQrn.SelStart := v1;
+      exit;
+    end;
+    if (st1 <> ',') and (st2 <> ',') and (st3 <> ',') and (st4 = ',') and
+      (st5 <> ',') and (st6 = ',') then
+    begin
+      ShowMessage('Digite apenas um separador decimal');
+      Delete(stv, v1, 1);
+      edtQrn.Text := '';
+      edtQrn.Text := (stv);
+      edtQrn.SelStart := v1;
+      exit;
+    end;
+
+    if (st1 <> ',') and (st2 <> ',') and (st3 <> ',') and (st4 <> ',') and
+      (st5 = ',') and (st6 = ',') then
+    begin
+      ShowMessage('Digite apenas um separador decimal');
+      Delete(stv, v1, 1);
+      edtQrn.Text := '';
+      edtQrn.Text := (stv);
+      edtQrn.SelStart := v1;
+      exit;
+    end;
+
+    if (st1 <> ',') and (st2 <> ',') and (st3 <> ',') and (st4 <> ',') and
+      (st5 <> ',') and (st6 = ',') then
     begin
       ShowMessage('Não terminar com separador decimal');
       Delete(stv, v1, 1);
@@ -343,7 +427,7 @@ begin
      begin
           materiaSeca();
           consentracaoNutriente();
-          qrns := edtQrn.text;
+          qrns := edtQrn.Text;
           qrn := StrToFloat(qrns);
           if (dejeto <> 8) and (dejeto <> 9) then
           begin
