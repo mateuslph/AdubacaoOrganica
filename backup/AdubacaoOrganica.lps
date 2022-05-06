@@ -22,8 +22,8 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uMain"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="64"/>
-        <CursorPos X="10" Y="71"/>
+        <TopLine Value="71"/>
+        <CursorPos X="11" Y="161"/>
         <UsageCount Value="26"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -55,15 +55,15 @@
       </Position1>
       <Position2>
         <Filename Value="Units\umain.pas"/>
-        <Caret Line="34" Column="38" TopLine="252"/>
+        <Caret Line="36" Column="35" TopLine="18"/>
       </Position2>
       <Position3>
         <Filename Value="Units\umain.pas"/>
-        <Caret Line="36" Column="35" TopLine="18"/>
+        <Caret Line="339" Column="15" TopLine="335"/>
       </Position3>
       <Position4>
         <Filename Value="Units\umain.pas"/>
-        <Caret Line="339" Column="15" TopLine="335"/>
+        <Caret Line="72" Column="10" TopLine="72"/>
       </Position4>
     </JumpHistory>
     <RunParams>

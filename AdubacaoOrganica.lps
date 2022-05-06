@@ -22,11 +22,10 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uMain"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="72"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="71"/>
         <CursorPos X="11" Y="161"/>
         <UsageCount Value="26"/>
-        <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
       </Unit1>
       <Unit2>
         <Filename Value="C:\lazarus\lcl\include\customform.inc"/>
@@ -48,28 +47,10 @@
         <DefaultSyntaxHighlighter Value="LFM"/>
       </Unit4>
     </Units>
-    <JumpHistory Count="5" HistoryIndex="4">
-      <Position1>
-        <Filename Value="Units\umain.pas"/>
-        <Caret Line="339" Column="19" TopLine="245"/>
-      </Position1>
-      <Position2>
-        <Filename Value="Units\umain.pas"/>
-        <Caret Line="34" Column="38" TopLine="252"/>
-      </Position2>
-      <Position3>
-        <Filename Value="Units\umain.pas"/>
-        <Caret Line="36" Column="35" TopLine="18"/>
-      </Position3>
-      <Position4>
-        <Filename Value="Units\umain.pas"/>
-        <Caret Line="339" Column="15" TopLine="335"/>
-      </Position4>
-      <Position5>
-        <Filename Value="Units\umain.pas"/>
-        <Caret Line="72" Column="10" TopLine="72"/>
-      </Position5>
-    </JumpHistory>
+    <General>
+      <ActiveWindowIndexAtStart Value="-1"/>
+    </General>
+    <JumpHistory HistoryIndex="-1"/>
     <RunParams>
       <FormatVersion Value="2"/>
       <Modes ActiveMode=""/>

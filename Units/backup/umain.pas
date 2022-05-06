@@ -27,6 +27,7 @@ type
     procedure cbTipoDejetoChange(Sender: TObject);
     procedure cbTipoNutrChange(Sender: TObject);
     procedure edtQrnKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
+    procedure edtQrnKeyUp(Sender: TObject; var Key: Word; Shift: TShiftState);
     procedure materiaSeca();
     procedure consentracaoNutriente();
     procedure calculo();
@@ -69,6 +70,11 @@ begin
      begin
           calculo();
      end;
+end;
+
+procedure TDejetos.edtQrnKeyUp(Sender: TObject; var Key: Word;
+  Shift: TShiftState);
+begin
 
     stpt := edtQrn.Text;
     v1 := length(stpt);
@@ -153,7 +159,6 @@ begin
     begin
       edtQrn.Text := '';
     end;
-
 end;
 
 procedure TDejetos.materiaSeca();

@@ -38,6 +38,7 @@ object Dejetos: TDejetos
     Width = 100
     MaxLength = 6
     OnKeyDown = edtQrnKeyDown
+    OnKeyUp = edtQrnKeyUp
     TabOrder = 2
   end
   object lbTipDej: TLabel
