@@ -36,7 +36,9 @@ object Dejetos: TDejetos
     Height = 28
     Top = 224
     Width = 100
+    MaxLength = 6
     OnKeyDown = edtQrnKeyDown
+    OnKeyUp = edtQrnKeyUp
     TabOrder = 2
   end
   object lbTipDej: TLabel

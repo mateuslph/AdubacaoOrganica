@@ -36,6 +36,7 @@ object Dejetos: TDejetos
     Height = 28
     Top = 224
     Width = 100
+    MaxLength = 6
     OnKeyDown = edtQrnKeyDown
     TabOrder = 2
   end
