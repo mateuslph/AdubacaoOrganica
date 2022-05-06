@@ -26,8 +26,10 @@ type
     procedure btnOkClick(Sender: TObject);
     procedure cbTipoDejetoChange(Sender: TObject);
     procedure cbTipoNutrChange(Sender: TObject);
+    procedure edtQrnKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
     procedure materiaSeca();
     procedure consentracaoNutriente();
+    procedure calculo();
   private
          var tipoNutr, dejeto : integer;
          var saida2, qrn, ms, c, ie, n, p, k, mn, mp, mk : real;
@@ -50,6 +52,15 @@ begin
   tipoNutr := cbTipoNutr.ItemIndex;
 end;
 
+procedure TDejetos.edtQrnKeyDown(Sender: TObject; var Key: Word;
+  Shift: TShiftState);
+begin
+     If (Key = 13) Then
+     begin
+          calculo();
+     end;
+end;
+
 procedure TDejetos.cbTipoDejetoChange(Sender: TObject);
 begin
   dejeto := cbTipoDejeto.ItemIndex;
@@ -57,31 +68,7 @@ end;
 
 procedure TDejetos.btnOkClick(Sender: TObject);
 begin
-     if (cbTipoNutr.ItemIndex <> -1) and (cbTipoDejeto.ItemIndex <> -1)
-     and (edtQrn.Text <> '') then
-     begin
-          materiaSeca();
-          consentracaoNutriente();
-          qrns := edtQrn.text;
-          qrn := StrToFloat(qrns);
-          if (dejeto <> 8) and (dejeto <> 9) then
-          begin
-               saida2 := qrn/((ms/100)*c*(ie/100));
-               lbSaida3.caption := 'ton/ha';
-          end
-          else
-          begin
-               saida2 := qrn/(c*(ie/100));
-               lbSaida3.caption := 'm³/ha';
-          end;
-          saida2 := Round(saida2);
-          saida2s := FloatToStr(saida2);
-          lbSaida2.Caption := saida2s;
-     end
-     else
-     begin
-          ShowMessage('Complete os dados!');
-     end;
+     calculo();
 end;
 
 procedure TDejetos.materiaSeca();
@@ -135,63 +122,63 @@ begin
   case (dejeto) of
    0:
      begin
-          n := 3.2;
-          p := 3.5;
-          k := 2.5;
+          n := 32;
+          p := 35;
+          k := 25;
      end;
    1:
      begin
-          n := 3.5;
-          p := 3.8;
-          k := 3.0;
+          n := 35;
+          p := 38;
+          k := 30;
      end;
    2:
      begin
-          n := 3.8;
-          p := 4.0;
-          k := 3.5;
+          n := 38;
+          p := 40;
+          k := 35;
      end;
    3:
      begin
-          n := 5.0;
-          p := 4.0;
-          k := 4.0;
+          n := 50;
+          p := 40;
+          k := 40;
      end;
    4:
      begin
-          n := 1.6;
-          p := 4.9;
-          k := 1.9;
+          n := 16;
+          p := 49;
+          k := 19;
      end;
    5:
      begin
-          n := 1.5;
-          p := 2.6;
-          k := 1.8;
+          n := 15;
+          p := 26;
+          k := 18;
      end;
    6:
      begin
-          n := 2.1;
-          p := 2.8;
-          k := 2.9;
+          n := 21;
+          p := 28;
+          k := 29;
      end;
    7:
      begin
-          n := 1.5;
-          p := 1.4;
-          k := 1.5;
+          n := 15;
+          p := 14;
+          k := 15;
      end;
    8:
      begin
-          n := 2.8;
-          p := 2.4;
-          k := 1.5;
+          n := 28;
+          p := 24;
+          k := 15;
      end;
    9:
      begin
-          n := 1.4;
-          p := 0.8;
-          k := 1.4;
+          n := 14;
+          p := 8;
+          k := 14;
      end;
    end;
 
@@ -257,6 +244,34 @@ begin
           ie := mk;
      end;
    end;
+end;
+
+procedure TDejetos.calculo;
+begin
+    if (cbTipoNutr.ItemIndex <> -1) and (cbTipoDejeto.ItemIndex <> -1)
+     and (edtQrn.Text <> '') then
+     begin
+          materiaSeca();
+          consentracaoNutriente();
+          qrns := edtQrn.text;
+          qrn := StrToFloat(qrns);
+          if (dejeto <> 8) and (dejeto <> 9) then
+          begin
+               saida2 := qrn/((ms/100)*c*(ie/100));
+               lbSaida3.caption := 'ton/ha';
+          end
+          else
+          begin
+               saida2 := qrn/(c*(ie/100));
+               lbSaida3.caption := 'm³/ha';
+          end;
+          saida2s := FormatFloat('0.0', saida2);
+          lbSaida2.Caption := saida2s;
+     end
+     else
+     begin
+          ShowMessage('Complete os dados!');
+     end;
 end;
 
 end.

@@ -1,0 +1,115 @@
+object Dejetos: TDejetos
+  Left = 353
+  Height = 325
+  Top = 246
+  Width = 310
+  BorderStyle = bsDialog
+  Caption = 'Dejetos'
+  ClientHeight = 325
+  ClientWidth = 310
+  DesignTimePPI = 120
+  LCLVersion = '2.2.0.4'
+  object cbTipoDejeto: TComboBox
+    Left = 39
+    Height = 28
+    Top = 128
+    Width = 232
+    ItemHeight = 20
+    Items.Strings = (
+      'Cama de frango (3-4 lotes)'
+      'Cama de frango (5-6 lotes)'
+      'Cama de frangos (7-8 lotes)'
+      'Cama de peru (2 lotes)'
+      'Cama de poedeira'
+      'Cama sobreposta de suínos'
+      'Esterco sólido de suínos'
+      'Esterco sólido de bovinos'
+      'Esterco líquido de suínos'
+      'Esterco líquido de bovinos'
+    )
+    OnChange = cbTipoDejetoChange
+    TabOrder = 1
+    Text = 'Selecione o Tipo de Dejeto'
+  end
+  object edtQrn: TEdit
+    Left = 38
+    Height = 28
+    Top = 224
+    Width = 100
+    OnKeyDown = edtQrnKeyDown
+    TabOrder = 2
+  end
+  object lbTipDej: TLabel
+    Left = 38
+    Height = 20
+    Top = 96
+    Width = 233
+    Caption = 'Tipo de dejeto que deseja analizar:'
+  end
+  object lbQrn: TLabel
+    Left = 38
+    Height = 40
+    Top = 176
+    Width = 178
+    Caption = 'Quantidade recomendada '#13#10'de nutrientes em Kg:'
+  end
+  object lbSaida1: TLabel
+    Left = 46
+    Height = 20
+    Top = 280
+    Width = 47
+    Caption = 'Aplicar'
+  end
+  object lbSaida2: TLabel
+    Left = 102
+    Height = 20
+    Top = 280
+    Width = 30
+    Caption = '_____'
+  end
+  object lbSaida3: TLabel
+    Left = 142
+    Height = 20
+    Top = 280
+    Width = 36
+    Caption = '______'
+  end
+  object lbSaida4: TLabel
+    Left = 190
+    Height = 20
+    Top = 280
+    Width = 73
+    Caption = 'de dejetos.'
+  end
+  object btnOk: TButton
+    Left = 177
+    Height = 31
+    Top = 224
+    Width = 94
+    Caption = 'OK'
+    OnClick = btnOkClick
+    TabOrder = 3
+  end
+  object cbTipoNutr: TComboBox
+    Left = 39
+    Height = 28
+    Top = 48
+    Width = 190
+    ItemHeight = 20
+    Items.Strings = (
+      'Nitrogênio'
+      'Fósforo'
+      'Potássio'
+    )
+    OnChange = cbTipoNutrChange
+    TabOrder = 0
+    Text = 'Selecione o Nutriente'
+  end
+  object lbTipoNutr: TLabel
+    Left = 39
+    Height = 20
+    Top = 17
+    Width = 188
+    Caption = 'Tipo de Nutriente a analizar:'
+  end
+end
