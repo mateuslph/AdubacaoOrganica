@@ -432,12 +432,12 @@ begin
           if (dejeto <> 8) and (dejeto <> 9) then
           begin
                saida2 := qrn/((ms/100)*c*(ie/100));
-               lbSaida3.caption := 'ton/ha';
+               lbSaida3.caption := 'ton';
           end
           else
           begin
                saida2 := qrn/(c*(ie/100));
-               lbSaida3.caption := 'm³/ha';
+               lbSaida3.caption := 'm³';
           end;
           saida2s := FormatFloat('0.0', saida2);
           lbSaida2.Caption := saida2s;

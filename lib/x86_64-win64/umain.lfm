@@ -70,14 +70,14 @@ object Dejetos: TDejetos
     Caption = '_____'
   end
   object lbSaida3: TLabel
-    Left = 142
+    Left = 157
     Height = 20
     Top = 280
     Width = 36
     Caption = '______'
   end
   object lbSaida4: TLabel
-    Left = 190
+    Left = 198
     Height = 20
     Top = 280
     Width = 73

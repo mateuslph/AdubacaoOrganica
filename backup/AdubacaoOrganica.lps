@@ -22,8 +22,8 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uMain"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="25"/>
-        <CursorPos X="70" Y="37"/>
+        <TopLine Value="426"/>
+        <CursorPos X="39" Y="440"/>
         <UsageCount Value="27"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -48,24 +48,7 @@
         <DefaultSyntaxHighlighter Value="LFM"/>
       </Unit4>
     </Units>
-    <JumpHistory Count="4" HistoryIndex="3">
-      <Position1>
-        <Filename Value="Units\umain.pas"/>
-        <Caret Line="82" Column="11" TopLine="63"/>
-      </Position1>
-      <Position2>
-        <Filename Value="Units\umain.pas"/>
-        <Caret Line="77" Column="29" TopLine="63"/>
-      </Position2>
-      <Position3>
-        <Filename Value="Units\umain.pas"/>
-        <Caret Line="71" Column="24" TopLine="64"/>
-      </Position3>
-      <Position4>
-        <Filename Value="Units\umain.pas"/>
-        <Caret Line="79" Column="29" TopLine="67"/>
-      </Position4>
-    </JumpHistory>
+    <JumpHistory HistoryIndex="-1"/>
     <RunParams>
       <FormatVersion Value="2"/>
       <Modes ActiveMode=""/>
