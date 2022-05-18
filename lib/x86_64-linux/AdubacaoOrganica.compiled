@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Compiler Value="C:\fpcupdeluxe\laz32\fpc\bin\i386-win32\fpc.exe" Date="1420603794"/>
+  <Params Value=" -Tlinux -Px86_64 -MObjFPC -Scghi -Cg -O1 -gw3 -gl -l -vewnhibq -FiE:\!_Projetos\Lazarus\AdubacaoOrganica\AdubacaoOrganica\lib\x86_64-linux -FuE:\!_Projetos\Lazarus\AdubacaoOrganica\AdubacaoOrganica\Units -FuC:\fpcupdeluxe\laz32\lazarus\lcl\units\x86_64-linux\gtk2 -FuC:\fpcupdeluxe\laz32\lazarus\lcl\units\x86_64-linux -FuC:\fpcupdeluxe\laz32\lazarus\components\freetype\lib\x86_64-linux -FuC:\fpcupdeluxe\laz32\lazarus\components\lazutils\lib\x86_64-linux -FuC:\fpcupdeluxe\laz32\lazarus\packager\units\x86_64-linux -FuE:\!_Projetos\Lazarus\AdubacaoOrganica\AdubacaoOrganica\ -FUE:\!_Projetos\Lazarus\AdubacaoOrganica\AdubacaoOrganica\lib\x86_64-linux\ -FEE:\!_Projetos\Lazarus\AdubacaoOrganica\AdubacaoOrganica\Linux\ -oE:\!_Projetos\Lazarus\AdubacaoOrganica\AdubacaoOrganica\Linux\AdubacaoOrganica -dLCL -dLCLgtk2 AdubacaoOrganica.lpr"/>
+</CONFIG>
