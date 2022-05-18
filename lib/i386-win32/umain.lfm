@@ -8,7 +8,7 @@ object Dejetos: TDejetos
   ClientHeight = 325
   ClientWidth = 310
   DesignTimePPI = 120
-  LCLVersion = '2.0.12.0'
+  LCLVersion = '2.2.0.4'
   object cbTipoDejeto: TComboBox
     Left = 39
     Height = 28
@@ -36,6 +36,9 @@ object Dejetos: TDejetos
     Height = 28
     Top = 224
     Width = 100
+    MaxLength = 6
+    OnKeyDown = edtQrnKeyDown
+    OnKeyUp = edtQrnKeyUp
     TabOrder = 2
   end
   object lbTipDej: TLabel
@@ -44,7 +47,6 @@ object Dejetos: TDejetos
     Top = 96
     Width = 233
     Caption = 'Tipo de dejeto que deseja analizar:'
-    ParentColor = False
   end
   object lbQrn: TLabel
     Left = 38
@@ -52,7 +54,6 @@ object Dejetos: TDejetos
     Top = 176
     Width = 178
     Caption = 'Quantidade recomendada '#13#10'de nutrientes em Kg:'
-    ParentColor = False
   end
   object lbSaida1: TLabel
     Left = 46
@@ -60,7 +61,6 @@ object Dejetos: TDejetos
     Top = 280
     Width = 47
     Caption = 'Aplicar'
-    ParentColor = False
   end
   object lbSaida2: TLabel
     Left = 102
@@ -68,23 +68,20 @@ object Dejetos: TDejetos
     Top = 280
     Width = 30
     Caption = '_____'
-    ParentColor = False
   end
   object lbSaida3: TLabel
-    Left = 142
+    Left = 157
     Height = 20
     Top = 280
     Width = 36
     Caption = '______'
-    ParentColor = False
   end
   object lbSaida4: TLabel
-    Left = 190
+    Left = 198
     Height = 20
     Top = 280
     Width = 73
     Caption = 'de dejetos.'
-    ParentColor = False
   end
   object btnOk: TButton
     Left = 177
@@ -116,6 +113,5 @@ object Dejetos: TDejetos
     Top = 17
     Width = 188
     Caption = 'Tipo de Nutriente a analizar:'
-    ParentColor = False
   end
 end
