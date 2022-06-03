@@ -3,7 +3,7 @@
   <ProjectSession>
     <PathDelim Value="\"/>
     <Version Value="12"/>
-    <BuildModes Active="Linux"/>
+    <BuildModes Active="Default"/>
     <Units Count="5">
       <Unit0>
         <Filename Value="AdubacaoOrganica.lpr"/>
@@ -12,7 +12,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="34"/>
+        <UsageCount Value="35"/>
       </Unit0>
       <Unit1>
         <Filename Value="Units\umain.pas"/>
@@ -22,8 +22,9 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uMain"/>
         <IsVisibleTab Value="True"/>
-        <CursorPos X="34" Y="119"/>
-        <UsageCount Value="34"/>
+        <TopLine Value="8"/>
+        <CursorPos X="7" Y="531"/>
+        <UsageCount Value="35"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit1>
@@ -118,19 +119,19 @@
       </Position17>
       <Position18>
         <Filename Value="Units\umain.pas"/>
-        <Caret Line="116" Column="35" TopLine="248"/>
+        <Caret Line="114" Column="14" TopLine="98"/>
       </Position18>
       <Position19>
         <Filename Value="Units\umain.pas"/>
-        <Caret Line="114" Column="14" TopLine="98"/>
+        <Caret Line="123" Column="33" TopLine="112"/>
       </Position19>
       <Position20>
         <Filename Value="Units\umain.pas"/>
-        <Caret Line="123" Column="33" TopLine="112"/>
+        <Caret Line="36" Column="57" TopLine="22"/>
       </Position20>
       <Position21>
         <Filename Value="Units\umain.pas"/>
-        <Caret Line="36" Column="57" TopLine="22"/>
+        <Caret Line="125" Column="34" TopLine="103"/>
       </Position21>
     </JumpHistory>
     <RunParams>
