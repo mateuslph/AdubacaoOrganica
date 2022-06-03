@@ -22,7 +22,7 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uMain"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="8"/>
+        <TopLine Value="7"/>
         <CursorPos X="7" Y="531"/>
         <UsageCount Value="35"/>
         <Loaded Value="True"/>
