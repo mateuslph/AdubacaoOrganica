@@ -34,9 +34,18 @@ type
     procedure calculo();
     procedure verificaVirgula();
   private
-         var tipoNutr, dejeto, v1, v2, leng, vAux: integer;
+         var tipoNutr, dejeto, v1, v2, vAux: integer;
          var saida2, qrn, ms, c, ie, n, p, k, mn, mp, mk : real;
-         var qrns, saida2s, stpt, stre, st1, st2, st3, st4, st5, st6, stv, strAuxDois, strTres : string;
+         var stpt, stre, st1, st2, st3, st4, st5, st6, stv : string;
+         var qrns, saida2s, strAux : string;
+
+         // qrn   = quantidade recomendada do nutriente
+         // ms    = percentagem de matéria seca do fertilizante orgânico sólido
+         // c     = concentração de N, P2O5 ou K2O no fertilizante orgânico em kg
+         // ie    = índice de eficiência agronômica do fertilizante
+         // n     = nitrogenio
+         // p     = fosforo
+         // k     = potassio
   public
 
   end;
@@ -55,16 +64,16 @@ begin
   tipoNutr := cbTipoNutr.ItemIndex;
 end;
 
-procedure TDejetos.edtQrnClick(Sender: TObject);
-begin
-     strAuxDois := edtQrn.Text;
-     vAux := Length(strAuxDois);
-     edtQrn.SelStart := vAux;
-end;
-
 procedure TDejetos.cbTipoDejetoChange(Sender: TObject);
 begin
   dejeto := cbTipoDejeto.ItemIndex;
+end;
+
+procedure TDejetos.edtQrnClick(Sender: TObject);
+begin
+     strAux := edtQrn.Text;
+     vAux := Length(strAux);
+     edtQrn.SelStart := vAux;
 end;
 
 procedure TDejetos.btnOkClick(Sender: TObject);
@@ -79,9 +88,9 @@ begin
      if (Key = 13) then
      begin
           verificaVirgula();
-          strAuxDois := edtQrn.Text;
-          vAux := Length(strAuxDois);
-          if (strAuxDois[vAux] <> ',') then
+          strAux := edtQrn.Text;
+          vAux := Length(strAux);
+          if (strAux[vAux] <> ',') then
           begin
                calculo();
           end;
@@ -495,7 +504,7 @@ procedure TDejetos.verificaVirgula;
 begin
   if (v1 = 2) and (st2 = ',') then
     begin
-      ShowMessage('Não terminar com separador decimal');
+      //ShowMessage('Não terminar com separador decimal');
       Delete(stv, v1, 1);
       edtQrn.Text := '';
       edtQrn.Text := (stv);
@@ -506,7 +515,7 @@ begin
     else
     if (v1 = 3) and (st3 = ',') then
     begin
-      ShowMessage('Não terminar com separador decimal');
+      //ShowMessage('Não terminar com separador decimal');
       Delete(stv, v1, 1);
       edtQrn.Text := '';
       edtQrn.Text := (stv);
@@ -517,7 +526,7 @@ begin
     else
     if (v1 = 4) and (st4 = ',') then
     begin
-      ShowMessage('Não terminar com separador decimal');
+      //ShowMessage('Não terminar com separador decimal');
       Delete(stv, v1, 1);
       edtQrn.Text := '';
       edtQrn.Text := (stv);
@@ -528,7 +537,7 @@ begin
     else
     if (v1 = 5) and (st5 = ',') then
     begin
-      ShowMessage('Não terminar com separador decimal');
+      //ShowMessage('Não terminar com separador decimal');
       Delete(stv, v1, 1);
       edtQrn.Text := '';
       edtQrn.Text := (stv);
